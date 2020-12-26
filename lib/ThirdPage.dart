@@ -49,57 +49,6 @@ class _ThirdPageState extends State<ThirdPage> {
                       ]),
                     ),
                   )),
-              Expanded(
-                  flex: 1,
-                  child: Center(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                            width: MediaQuery.of(context).size.width / 6,
-                            height: MediaQuery.of(context).size.height * 0.01,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(5))),
-                        SizedBox(
-                            width: MediaQuery.of(context).size.width * 0.01),
-                        Container(
-                            width: MediaQuery.of(context).size.width / 6,
-                            height: MediaQuery.of(context).size.height * 0.01,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(5))),
-                        SizedBox(
-                            width: MediaQuery.of(context).size.width * 0.01),
-                        Container(
-                            width: MediaQuery.of(context).size.width / 6,
-                            height: MediaQuery.of(context).size.height * 0.01,
-                            decoration: BoxDecoration(
-                                color: Colors.orange[300],
-                                borderRadius: BorderRadius.circular(5))),
-                      ],
-                    ),
-                  )),
-              Expanded(
-                  flex: 1,
-                  child: Align(
-                      alignment: Alignment(0.9, 0.85),
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (BuildContext context) =>
-                                      HomePage()));
-                        },
-                        child: Text(
-                          'Skip',
-                          style: TextStyle(
-                              color: Colors.blueGrey[800],
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ))),
             ],
           ),
         ),
