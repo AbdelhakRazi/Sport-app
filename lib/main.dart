@@ -104,6 +104,50 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   ),
                 )),
+            Expanded(
+              flex: 1,
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(30),
+                            border: Border(
+                              bottom: BorderSide(
+                                  color: Colors.blueGrey[800], width: 1.5),
+                              top: BorderSide(
+                                  color: Colors.blueGrey[800], width: 1.5),
+                              left: BorderSide(
+                                  color: Colors.blueGrey[800], width: 1.5),
+                              right: BorderSide(
+                                  color: Colors.blueGrey[800], width: 1.5),
+                            )),
+                        padding:
+                            EdgeInsets.only(top: 0.5, right: 1.5, left: 1.5),
+                        child: MaterialButton(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30)),
+                            minWidth: MediaQuery.of(context).size.width / 2,
+                            height: MediaQuery.of(context).size.height * 0.05,
+                            elevation: 0,
+                            color: Colors.orange[500],
+                            onPressed: () {},
+                            child: Text('Log In',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.orange[50],
+                                )))),
+                    Text('Create an account',
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.blueGrey[500],
+                            fontWeight: FontWeight.bold))
+                  ],
+                ),
+              ),
+            )
           ],
         ));
   }
