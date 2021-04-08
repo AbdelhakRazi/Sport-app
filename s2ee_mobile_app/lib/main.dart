@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:s2ee_mobile_app/config/theme.dart';
 import 'package:s2ee_mobile_app/views/routes/routes.dart';
 import 'package:s2ee_mobile_app/views/routes/routes_name.dart';
 
@@ -13,6 +14,7 @@ class S2EEApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "S2EE",
+      theme: AppTheme.defaultTheme,
       onGenerateRoute: Routes.onGenerateRoute,
       initialRoute: AppRoutes.home,
     );
