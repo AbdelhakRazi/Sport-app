@@ -9,6 +9,8 @@ class Routes {
       // home
       case AppRoutes.home:
         return _pageAnimatedRoute(HomeScreen(), settings);
+      case AppRoutes.login:
+      return _pageAnimatedRoute(LoginScreen(),settings);
 
       // default
       default:

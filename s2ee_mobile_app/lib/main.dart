@@ -16,7 +16,7 @@ class S2EEApp extends StatelessWidget {
       title: "S2EE",
       theme: AppTheme.defaultTheme,
       onGenerateRoute: Routes.onGenerateRoute,
-      initialRoute: AppRoutes.home,
+      initialRoute: AppRoutes.login,
     );
   }
 }
